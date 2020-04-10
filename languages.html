@@ -1,0 +1,266 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="description" content="educational web site">
+<meta name="keywords" content="HTML,CSS">
+<meta name="author" content="Naveen">
+<title>Education Website</title>
+<link rel="stylesheet" type="text/css" href="geeks.css">
+</head>
+<body>
+<header class="content">
+<div class="container">
+<div id="branding">
+<h1><span class="highlight">Geeks for </span> Geeks</h1>
+</div>
+<nav>
+<ul>
+<li ><a href="geeksport.html">portfolio</a></li>
+<li><a href="geeksteam.html">team</a></li>
+<li><a href="geeksservices.html">services</a></li>
+<li class ="current"><a href="geeksabout.html">about</a></li>
+<li><a href="geeksforgeeks.html">Home</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<!--<section id="showcase">
+<div class="container">
+</div>
+</section>
+
+
+
+<section id="newsletter">
+<div class="container">
+<p>The Motto of Founder is"ENJOY  YOUR LIFE,</br>
+BECAUSE IT'S  WORTH ENJOYING "
+</p>
+</div>
+</section> --!>
+
+
+
+
+<section id="boxes">
+<div class="container">
+<h2>C Language Introduction</h2>
+<p>C is a procedural programming language. It was initially developed by Dennis Ritchie in the year 1972. It was mainly developed as a system programming language to write an operating system. The main features of C language include low-level access to memory, a simple set of keywords, and clean style, these features make C language suitable for system programmings like an operating system or compiler development.
+Many later languages have borrowed syntax/features directly or indirectly from C language. Like syntax of Java, PHP, JavaScript, and many other languages are mainly based on C language. C++ is nearly a superset of C language (There are few programs that may compile in C, but not in C++).
+</p><p>
+<h3>Beginning with C programming:</h3>
+
+<h3>1.Structure of a C program</h3>
+After the above discussion, we can formally assess the structure of a C program. By structure, it is meant that any program can be written in this structure only. Writing a C program in any other structure will hence lead to a Compilation Error.
+
+
+The structure of a C program is as follows:
+
+
+
+<br>The components of the above structure are:</br>
+
+<h3>1.Header Files Inclusion:</h3> The first and foremost component is the inclusion of the Header files in a C program.
+A header file is a file with extension .h which contains C function declarations and macro definitions to be shared between several source files.
+<br>Some of C Header files:<br>
+
+1.stddef.h – Defines several useful types and macros.
+2.stdint.h – Defines exact width integer types.
+3.stdio.h – Defines core input and output functions
+4.stdlib.h – Defines numeric conversion functions, pseudo-random network generator, memory allocation
+5.string.h – Defines string handling functions
+6.math.h – Defines common mathematical functions<br>
+<b>Syntax to include a header file in C:<br></b>
+
+#include <br>
+<b>2.Main Method Declaration:</b> The next part of a C program is to declare the main() function. The syntax to declare the main function is:
+<br><b>Syntax to Declare main method:</b><br>
+
+int main()<br>
+{}<br>
+<b>3.Variable Declaration:</b> The next part of any C program is the variable declaration. It refers to the variables that are to be used in the function. Please note that in the C program, no variable can be used without being declared. Also in a C program, the variables are to be declared before any operation in the function.
+<br><b>Example:</b><br>
+
+int main()<br>
+{<br>
+    int a;<br>
+.<br>
+.<br>
+<b>4.Body:</b> Body of a function in C program, refers to the operations that are performed in the functions. It can be anything like manipulations, searching, sorting, printing, etc.
+<br><b>Example:</b><br>
+
+int main()<br>
+{<br>
+    int a;<br>
+    printf("%d", a);<br>
+.<br>
+.<br>
+<b><br>5.Return Statement:</b> The last part in any C program is the return statement. The return statement refers to the returning of the values from a function. This return statement and return value depend upon the return type of the function. For example, if the return type is void, then there will be no return statement. In any other case, there will be a return statement and the return value will be of the type of the specified return type.
+<br>Example:
+
+
+
+
+<br>int main()<br>
+{<br>
+    int a;<br>
+
+    printf("%d", a);<br>
+
+    return 0;<br>
+}<br>
+<b>Writing first program:</b><br>
+Following is first program in C<br>
+#include <stdio.h> <br>
+int main(void) <br>
+{ <br>
+    printf("GeeksQuiz");<br> 
+    return 0; <br>
+} <br>
+Let us analyze the program line by line.<br>
+<b>Line 1: [ #include <stdio.h> ]</b> In a C program, all lines that start with # are processed by preprocessor which is a program invoked by the compiler. In a very basic term, preprocessor takes a C program and produces another C program. The produced program has no lines starting with #, all such lines are processed by the preprocessor. In the above example, preprocessor copies the preprocessed code of stdio.h to our file. The .h files are called header files in C. These header files generally contain declaration of functions. We need stdio.h for the function printf() used in the program.
+
+<br><b>Line 2 [ int main(void) ]</b> There must to be starting point from where execution of compiled C program begins. In C, the execution typically begins with first line of main(). The void written in brackets indicates that the main doesn’t take any parameter (See this for more details). main() can be written to take parameters also. We will be covering that in future posts.
+The int written before main indicates return type of main(). The value returned by main indicates status of program termination. See this post for more details on return type.
+
+<br><b>Line 3 and 6: [ { and } ]</b> In C language, a pair of curly brackets define a scope and mainly used in functions and control statements like if, else, loops. All functions must start and end with curly brackets.
+
+<br><b>Line 4 [ printf(“GeeksQuiz”); ]</b> printf() is a standard library function to print something on standard output. The semicolon at the end of printf indicates line termination. In C, semicolon is always used to indicate end of statement.
+
+<br><b>Line 5 [ return 0; ]</b> The return statement returns the value from main(). The returned value may be used by operating system to know termination status of your program. The value 0 typically means successful termination.
+
+<br><b>3.How to excecute the above program:</b><br>
+Inorder to execute the above program, we need to have a compiler to compile and run our programs. There are certain online compilers like https://ide.geeksforgeeks.org/, http://ideone.com/ or http://codepad.org/ that can be used to start C without installing a compiler.
+<br><b>Windows:</b> There are many compilers available freely for compilation of C programs like Code Blocks  and Dev-CPP.   We strongly recommend Code Blocks.
+</p>
+<h2>Object-Oriented programming</h2>
+<p>
+Object-oriented programming – As the name suggests uses objects in programming. Object-oriented programming aims to implement real-world entities like inheritance, hiding, polymorphism, etc in programming. The main aim of OOP is to bind together the data and the functions that operate on them so that no other part of the code can access this data except that function.
+
+<br><b>Characteristics of an Object Oriented Programming language</b><br>
+
+
+
+
+
+
+<b>Class:</b> The building block of C++ that leads to Object-Oriented programming is a Class. It is a user-defined data type, which holds its own data members and member functions, which can be accessed and used by creating an instance of that class. A class is like a blueprint for an object.
+
+<br>For Example: Consider the Class of Cars. There may be many cars with different names and brand but all of them will share some common properties like all of them will have 4 wheels, Speed Limit, Mileage range etc. So here, Car is the class and wheels, speed limits, mileage are their properties.
+
+<br>1.A Class is a user-defined data-type which has data members and member functions.
+<br>2.Data members are the data variables and member functions are the functions used to manipulate these variables and together these data members and member functions define the properties and behaviour of the objects in a Class.
+<br>3.In the above example of class Car, the data member will be speed limit, mileage etc and member functions can apply brakes, increase speed etc.
+<br>We can say that a Class in C++ is a blue-print representing a group of objects which shares some common properties and behaviours.
+
+<br><b>Object:</b> An Object is an identifiable entity with some characteristics and behaviour. An Object is an instance of a Class. When a class is defined, no memory is allocated but when it is instantiated (i.e. an object is created) memory is allocated.
+
+<br>class person <br>
+{ <br>
+    char name[20]; <br>
+    int id; <br>
+public: <br>
+    void getdetails(){} <br>
+}; <br>
+  
+int main() <br>
+{ <br>
+   person p1; // p1 is a object <br> 
+} <br>
+
+
+Object take up space in memory and have an associated address like a record in pascal or structure or union in C.
+
+<br>When a program is executed the objects interact by sending messages to one another.
+
+<br>Each object contains data and code to manipulate the data. Objects can interact without having to know details of each other’s data or code, it is sufficient to know the type of message accepted and type of response returned by the objects.
+
+<br><b>Encapsulation:</b> In normal terms, Encapsulation is defined as wrapping up of data and information under a single unit. In Object-Oriented Programming, Encapsulation is defined as binding together the data and the functions that manipulate them.
+
+<br>Consider a real-life example of encapsulation, in a company, there are different sections like the accounts section, finance section, sales section etc. The finance section handles all the financial transactions and keeps records of all the data related to finance. Similarly, the sales section handles all the sales-related activities and keeps records of all the sales. Now there may arise a situation when for some reason an official from the finance section needs all the data about sales in a particular month. In this case, he is not allowed to directly access the data of the sales section. He will first have to contact some other officer in the sales section and then request him to give the particular data. This is what encapsulation is. Here the data of the sales section and the employees that can manipulate them are wrapped under a single name “sales section”.
+
+
+
+
+
+<br>Encapsulation in C++<br>
+
+<br>Encapsulation also leads to data abstraction or hiding. As using encapsulation also hides the data. In the above example, the data of any of the section like sales, finance or accounts are hidden from any other section.
+
+<br><b>Abstraction:</b> Data abstraction is one of the most essential and important features of object-oriented programming in C++. Abstraction means displaying only essential information and hiding the details. Data abstraction refers to providing only essential information about the data to the outside world, hiding the background details or implementation.
+
+<br><br>Consider a real-life example of a man driving a car. The man only knows that pressing the accelerators will increase the speed of the car or applying brakes will stop the car but he does not know about how on pressing accelerator the speed is actually increasing, he does not know about the inner mechanism of the car or the implementation of accelerator, brakes etc in the car. This is what abstraction is.
+
+<br><b>1.Abstraction using Classes:</b> We can implement Abstraction in C++ using classes. The class helps us to group data members and member functions using available access specifiers. A Class can decide which data member will be visible to the outside world and which is not.
+<br><b>Abstraction in Header files:</b> One more type of abstraction in C++ can be header files. For example, consider the pow() method present in math.h header file. Whenever we need to calculate the power of a number, we simply call the function pow() present in the math.h header file and pass the numbers as arguments without knowing the underlying algorithm according to which the function is actually calculating the power of numbers.
+<br><br><b>Polymorphism:</b> The word polymorphism means having many forms. In simple words, we can define polymorphism as the ability of a message to be displayed in more than one form.
+
+<br><br>A person at the same time can have different characteristic. Like a man at the same time is a father, a husband, an employee. So the same person posses different behaviour in different situations. This is called polymorphism.
+
+<br><br>An operation may exhibit different behaviours in different instances. The behaviour depends upon the types of data used in the operation.
+
+<br>C++ supports operator overloading and function overloading.
+
+<br><br><b>Operator Overloading:</b> The process of making an operator to exhibit different behaviours in different instances is known as operator overloading.
+Function Overloading: Function overloading is using a single function name to perform different types of tasks.
+Polymorphism is extensively used in implementing inheritance.
+<br><br>Example: Suppose we have to write a function to add some integers, some times there are 2 integers, some times there are 3 integers. We can write the Addition Method with the same name having different parameters, the concerned method will be called according to parameters.
+
+
+
+<br><br><b>Inheritance: </b>The capability of a class to derive properties and characteristics from another class is called Inheritance. Inheritance is one of the most important features of Object-Oriented Programming.
+
+<br><b>Sub Class:</b> The class that inherits properties from another class is called Sub class or Derived Class.
+<b><br>Super Class:</b>The class whose properties are inherited by sub class is called Base Class or Super class.
+</p>
+
+<h2>Java Programming Basics</h2>
+<p>
+Java is one of the most popular and widely used programming language and platform. A platform is an environment that helps to develop and run programs written in any programming language.
+Java is fast, reliable and secure. From desktop to web applications, scientific supercomputers to gaming consoles, cell phones to the Internet, Java is used in every nook and corner.
+
+<br><br><b>However to become proficient in any programming language, one Firstly needs to understand the basics of that language.
+
+</b><br><br>Therefore, below are the basics of Java in the format in which it will help you the most to get the headstart:
+
+
+
+<br><br><b>1.Java Environment:</b> The programming environment of Java consists of three components mainly:
+<br><b>JDK
+<br>JRE
+<br>JVM
+<br>Learn about setting up the Java environment here: Setting up the environment in Java
+
+<br><br>2.Java Basic Syntax:</b> Every programming language has its own set of rules to declare, define and work on its components. Reading and learning about all of them together is difficult. Therefore here is a simple task of printing “Hello World” in Java. During this process, major components and their syntaxes are explained clearly.
+<br><b>Learn about printing “Hello World” in Java here: Beginning Java programming with Hello World Example
+
+<br><br>3.Comments in Java:<br></b> In a program, comments take part in making the program become more human-readable by placing the detail of code involved and proper use of comments makes maintenance easier and finding bugs easily. Comments are ignored by the compiler while compiling the code.
+<br>Learn about Comments in Java here: Comments in Java
+
+<br><br><b>4.Data Types in Java:</b> Each variable in Java has an associated data type. Each data type requires different amounts of memory and has some specific operations which can be performed over it.
+<br>Learn about different data types in Java here: Data types in Java
+
+<br><br><b>5.Variables in Java:</b> A variable is the name given to a memory location. It is the basic unit of storage in a program.
+<br>Learn about Variables in Java here: Variables in Java
+
+<br><b>6.Keywords in Java:</b> Keywords or Reserved words are the words in a language that are used for some internal process or represent some predefined actions. These words are therefore not allowed to use as variable names or objects. Doing this will result in a compile-time error.
+<br>Learn about Keywords in Java here: Keywords in Java
+
+<br><br><b>7.Operators in Java:</b> Operators are the foundation of any programming language. Thus the functionality of Java programming language is incomplete without the use of operators. We can define operators as symbols that help us to perform specific mathematical and logical computations on operands. In other words, we can say that an operator operates the operands.
+<br>Learn about Operators in Java here: Operators in Java
+
+<br><br><b>8.Decision Making (Control Statements) in Java: </b>Decision Making in programming is similar to decision making in real life. In programming also we face some situations where we want a certain block of code to be executed when some condition is fulfilled.
+A programming language uses control statements to control the flow of execution of the program based on certain conditions. These are used to cause the flow of execution to advance and branch based on changes to the state of a program.
+<br>Learn about Decision Making in Java here: Decision Making in Java
+
+<br><br><b>9.Loops in Java:</b> Looping in programming languages is a feature which facilitates the execution of a set of instructions/functions repeatedly while some condition evaluates to true.
+Java provides three ways for executing the loops. While all the ways provide similar basic functionality, they differ in their syntax and condition checking time.
+</div>
+</section>  
+<footer >
+<p>Educational website copyright &copy;2020</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,128 @@
+body{
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:15px;
+	line-height:1.5;
+	<!--or we can put like this also font:15px/1.5 Arial,Helvetica,sans-serif;--!>
+	padding:0;
+	margin:0;
+	background-color:white;
+	}
+.content{
+	background:rgb(11,160,50);
+	color:rgb(255,255,255);
+	padding-top:30px;
+	min-height:70px;
+	border-bottom:rgb(220,170,170) 3px solid;
+	overflow:hidden;
+	}
+.content a{
+	color:#ffffff;
+	text-decoration:none;
+	text-transform:Uppercase;
+	font-size:16px;}
+.content ul{
+	margin:0;
+	padding:0 0 20px 0;
+}
+.content li{
+	float:right;
+	display:inline;
+	padding-left:100px;
+	padding:20px 20px 0 20px;
+}
+
+#branding{
+	float:left;}
+#branding nav{
+	float:right;
+	margin-top:30px;
+	margin-left:30px;
+	padding:20px 0 40px 0;
+	padding-right:100px;
+	}
+
+#branding h1{
+	margin:0;
+	padding-left:20px
+	padding-right:30px;
+}
+.highlight,.current a{
+color:rgb(52,0,140);}
+
+.container{
+	width:80%;
+	margin:auto;
+	overflow:hidden;}
+
+
+#showcase{
+	min-height:500px;
+	background-image:url("geekforgeeks.png");
+	background-size:100% 100%;
+	text-align:center;
+ }
+#showcase p{
+	font-size:10px;}
+#newsletter{
+	background:rgb(11,160,50);
+	}
+#newsletter p{
+	color:white;
+	font-size:40px;
+	font-family:Arial;
+	text-align:center;
+	
+}
+
+#buttontype{
+background-color:white;
+color:white;
+padding:10px;
+font-size:40px;
+width:40%;
+}
+button:hover{
+	opacity:.7;
+	font-size:60px;
+}
+#boxes{
+padding-top:20px;
+background-color:white;
+font-size:20px;
+}
+#box{
+float:left;
+width:30%;
+padding:0 20px 0 0px;
+text-align:center;}
+footer{
+text-align:center;
+font-size:20px;
+margin-top:20px;
+padding:10px;
+color:white;
+background:rgb(11,160,50);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
